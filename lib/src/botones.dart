@@ -31,9 +31,9 @@ class _BotonesScreenState extends State<BotonesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1E1E2C),
+        backgroundColor: const Color.fromARGB(255, 204, 155, 245),
         title: const Text(
-          'ZukoPolarX',
+          'Menú Principal',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w600,
@@ -46,8 +46,8 @@ class _BotonesScreenState extends State<BotonesScreen> {
       backgroundColor: _coloresFondo[_pagina], // Color de fondo completo
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: _coloresFondo[_pagina], // Barra se integra con fondo
-        color: const Color(0xFF2C2C54),
-        buttonBackgroundColor: const Color(0xFF4B56D2),
+        color: const Color.fromARGB(255, 128, 128, 247),
+        buttonBackgroundColor: const Color.fromARGB(255, 169, 174, 236),
         animationDuration: const Duration(milliseconds: 300),
         items: const [
           Icon(Icons.home, color: Colors.white),

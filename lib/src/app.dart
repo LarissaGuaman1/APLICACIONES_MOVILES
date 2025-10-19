@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'botones.dart'; // Tu pantalla BotonesScreen
+import 'botones.dart'; // Pantalla principal después del login
+import 'registro.dart'; // Pantalla de registro (Ecuador)
 
 void main() {
   runApp(const MyApp());
@@ -173,6 +174,13 @@ class _HomepageState extends State<Homepage> {
                             const SnackBar(
                                 content: Text("Redirigiendo al registro...")),
                           );
+                          Future.delayed(const Duration(milliseconds: 800), () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const RegistroScreen()),
+                            );
+                          });
                         },
                       ),
                     ),
@@ -210,4 +218,3 @@ class _HomepageState extends State<Homepage> {
     );
   }
 }
-
